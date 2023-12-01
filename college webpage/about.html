@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/Untitled_design__2_-removebg-preview.png" alt="University Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <ion-icon name="arrow-back-outline" class="fa" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <li><a href="index.html">HOME</a></li> 
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+                <ion-icon name="list-outline" class="fa" onclick="showMenu()"></ion-icon>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!--------About us content-------->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+         <h1>We are the world's largest university</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+         Excepteur sint occaecat cupidatat non proident, 
+         sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+        <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <figure><img src="https://images.pexels.com/photos/18999533/pexels-photo-18999533/free-photo-of-group-of-people-listening-intently-to-a-presentation.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></figure>
+        </div>
+    </div>
+</section>
+
+<!----Footer---->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <div class="icon">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <i class="fa-brands fa-x-twitter"></i>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-tiktok"></ion-icon>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-skype"></i>
+    </div>
+    <div class="footer-text">
+        <p>Made with   by  &#128640; MOIN  &#128640;</p>
+        <a href="index.html"><i class="fa-solid fa-arrow-up"></i></a></div>
+</section>
+
+
+
+
+
+
+<!------JavaScript Code------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() { 
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script> 
+        AOS.init({
+            duration: 800,
+        }); 
+        
+        
+        </script>
+<!------Iconicns API------->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
